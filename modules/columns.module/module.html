@@ -1,0 +1,41 @@
+<section class="columns {{ module.bg_color == 'light blue' ? 'light-blue-color' : 'white-color' }}">
+  <div class="container">
+        {# small heading, heading, description #}
+        <div class="columns-con">
+          {% if module.small_heading %}
+            <div class="columns__subheading subheading">{{ module.small_heading }}</div>
+          {% endif %}
+
+          {% if module.heading %}
+            <div class="columns__heading heading">{{ module.heading }}</div>
+          {% endif %}
+        
+          {% if module.description %}
+            <div class="columns__description description">{{ module.description }}</div>
+          {% endif %}
+        </div>
+
+
+      <div class="row {{ module.text_order == 'text-left' ? ' text-left' : module.text_order == 'text-right' ? ' text-right' : ' text-center' }}">
+        {% for item in module.column_field %}
+          <div class="col-md-4">
+            <div class="columns__column{{ module.box_shadow == 'no' ? ' no' : ''}} {{ module.bg_color == 'light blue' ? 'light-blue-color' : 'white-color' }}">
+              <!--      img          -->
+              {% if item.image.src %}
+                <div style="background-image: url('{{ item.image.src }}')" class="columns__column-image"></div>
+                
+              {% endif %}
+              
+              <!--       text         -->
+              <div class="columns__column-heading">
+                {{ item.heading }}
+              </div>
+              <div class="columns__column-description description">
+                {{ item.description }}
+              </div>
+            </div>
+        </div>
+         {% endfor %}
+      </div>
+    </div>
+</section>

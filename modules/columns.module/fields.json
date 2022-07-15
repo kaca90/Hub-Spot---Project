@@ -1,0 +1,144 @@
+[ {
+  "id" : "cdb0f128-0143-4ca4-dada-38d809ceaf89",
+  "name" : "small_heading",
+  "display_width" : null,
+  "label" : "Small Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "low-cost 401(k) plan Services"
+}, {
+  "id" : "6cb4062e-09bf-1a87-246c-b6ef2ede6561",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Your Path to a Faster Retirement Starts Here"
+}, {
+  "id" : "294383db-64a3-93fd-085d-c234d60ca7e6",
+  "name" : "description",
+  "display_width" : null,
+  "label" : "Description",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Starting a new 401(k) can seem overwhelming. We’re going to lay it out for you in a way that’s straightforward and transparent. Here are the steps."
+}, {
+  "id" : "50624c73-ccdc-b2b8-c1e5-9df1616f2ba0",
+  "name" : "column_field",
+  "display_width" : null,
+  "label" : "Column Field",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : 3,
+    "sorting_label_field" : null,
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "05b3426e-796f-4712-900a-1906372957b4",
+    "name" : "image",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "src" : ""
+    }
+  }, {
+    "id" : "5ffe9a8c-6fa3-600a-762c-ebb670d6f4e8",
+    "name" : "heading",
+    "display_width" : null,
+    "label" : "Heading",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Lowest Fees in the Country"
+  }, {
+    "id" : "2208054d-f535-ab2f-3cea-6c293531f45c",
+    "name" : "description",
+    "display_width" : null,
+    "label" : "Description",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Keep more of your hard-earned savings! Nobody charges less for a custom retirement plan. "
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "heading" : "Lowest Fees in the Country",
+    "description" : "Keep more of your hard-earned savings! Nobody charges less for a custom retirement plan. ",
+    "image" : {
+      "src" : ""
+    }
+  }, {
+    "heading" : "Lowest Fees in the Country",
+    "description" : "Keep more of your hard-earned savings! Nobody charges less for a custom retirement plan. ",
+    "image" : {
+      "src" : ""
+    }
+  }, {
+    "heading" : "Lowest Fees in the Country",
+    "description" : "Keep more of your hard-earned savings! Nobody charges less for a custom retirement plan. ",
+    "image" : {
+      "src" : ""
+    }
+  } ]
+}, {
+  "id" : "d8399df7-bc67-8a2a-0abc-b9718c33e6cd",
+  "name" : "text_order",
+  "display_width" : null,
+  "label" : "Text order",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "text-left", "Text-left" ], [ "text-right", "Text-right" ], [ "text-center", "Text-center" ] ],
+  "type" : "choice",
+  "default" : "text-left"
+}, {
+  "id" : "20bc5e91-a8aa-8cb3-bd87-8eabe5307c33",
+  "name" : "box_shadow",
+  "display_width" : null,
+  "label" : "Box shadow",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "yes", "Yes" ], [ "no", "No" ] ],
+  "type" : "choice",
+  "default" : "yes"
+}, {
+  "id" : "35f73223-cfa1-6d4f-db56-d257727e9ec8",
+  "name" : "bg_color",
+  "display_width" : null,
+  "label" : "Bg Color",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "light blue", "Light Blue" ], [ "white", "White" ] ],
+  "type" : "choice",
+  "default" : "white"
+} ]

@@ -1,0 +1,125 @@
+[ {
+  "id" : "c77ca6ed-8cde-989e-35ce-fd5fb65a4a62",
+  "name" : "small_heading",
+  "display_width" : null,
+  "label" : "Small Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "low-cost 401(k) plan Services"
+}, {
+  "id" : "9b35c5ff-b896-bd47-3970-c8631e2f4d90",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "The secret to a faster retirement is a cost-efficient 401(k) plan that makes appropriate investing simple for participants. "
+}, {
+  "id" : "ad5dc8bf-c076-0814-2a46-3ed2462890e1",
+  "name" : "description",
+  "display_width" : null,
+  "label" : "Description",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "No 401(k) provider makes it easier for small and medium-sized businesses to offer such plans than Employee Fiduciary. With us, you’ll feel confident that you’re not being taken advantage of and are on the right path to retirement."
+}, {
+  "id" : "6533c220-6155-eb1e-a017-6516f51f8db1",
+  "name" : "button",
+  "display_width" : null,
+  "label" : "Buttons",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : 1,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "b07d381b-df87-e5a7-782d-912023186835",
+    "name" : "button_text",
+    "display_width" : null,
+    "label" : "Button Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Request a Proposal"
+  }, {
+    "id" : "3175211c-ae7d-febf-32d1-1efbcf838ed8",
+    "name" : "url_field",
+    "display_width" : null,
+    "label" : "Button URL",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "type" : "url",
+    "default" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "EXTERNAL"
+    }
+  }, {
+    "id" : "4be8b261-c180-ce71-7b9f-3b666a1925fe",
+    "name" : "button_type",
+    "display_width" : null,
+    "label" : "Button Type",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "primary", "Primary" ], [ "ghost", "Ghost" ], [ "secondary", "Secondary" ] ],
+    "type" : "choice",
+    "default" : "primary"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "button_text" : "Request a Proposal",
+    "url_field" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "EXTERNAL"
+    },
+    "button_type" : "primary"
+  }
+}, {
+  "id" : "32cef156-3662-a12a-aa45-5664f925c3fe",
+  "name" : "bg_color",
+  "display_width" : null,
+  "label" : "Bg Color",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "light blue", "Light Blue" ], [ "white", "White" ] ],
+  "type" : "choice",
+  "default" : "light blue"
+}, {
+  "id" : "9b3919ce-c7d6-8bee-7961-43140ac9c94e",
+  "name" : "image_field",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "src" : ""
+  }
+} ]

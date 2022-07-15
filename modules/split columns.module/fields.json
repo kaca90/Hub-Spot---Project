@@ -1,0 +1,191 @@
+[ {
+  "id" : "8986efe1-2b1b-876f-bf72-882ff29154e7",
+  "name" : "small_heading",
+  "display_width" : null,
+  "label" : "Small Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Low-cost 401(k) plan Services"
+}, {
+  "id" : "920c16ac-976e-06aa-ab1d-d0f6427070e0",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "The 401(k) Pitfalls That Delay Retirement"
+}, {
+  "id" : "50b5eefa-b257-da2f-8432-3c9e304d9a40",
+  "name" : "description",
+  "display_width" : null,
+  "label" : "Description",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "To retire as soon as possible, you must avoid three 401(k) pitfalls throughout your working years: "
+}, {
+  "id" : "23885583-f16d-a152-ac98-77b18115a807",
+  "name" : "module_order",
+  "display_width" : null,
+  "label" : "Module Order",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "image-left", "Image Left" ], [ "image-right", "Image Right" ] ],
+  "type" : "choice",
+  "default" : "image-left"
+}, {
+  "id" : "0a971076-9c97-b3e2-0870-3708274451e5",
+  "name" : "image_field",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://25995259.fs1.hubspotusercontent-eu1.net/hubfs/25995259/Group%206%20(1).png",
+    "alt" : "Group 6 (1)",
+    "loading" : "lazy",
+    "width" : 613,
+    "height" : 717,
+    "max_width" : 613,
+    "max_height" : 717
+  }
+}, {
+  "id" : "180bcaf1-51b7-1123-6745-070b71efebe4",
+  "name" : "subheading_field",
+  "display_width" : null,
+  "label" : "Subheading Fields",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : 3,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "4f0befc4-d1ed-f198-e0ce-0149eadb0020",
+    "name" : "image_ex",
+    "display_width" : null,
+    "label" : "Image ex",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://25995259.fs1.hubspotusercontent-eu1.net/hubfs/25995259/Checkmark%20Copy%204%20(1)-1.png",
+      "alt" : "Checkmark Copy 4 (1)-1",
+      "loading" : "lazy",
+      "width" : 37,
+      "height" : 36,
+      "max_width" : 37,
+      "max_height" : 36
+    }
+  }, {
+    "id" : "6b407caa-92d8-596f-430f-39d2870b2f92",
+    "name" : "subheading",
+    "display_width" : null,
+    "label" : "Subheading",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "High fees"
+  }, {
+    "id" : "49f084e3-d677-c7be-0913-0a0c86679040",
+    "name" : "description",
+    "display_width" : null,
+    "label" : "Description",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "image_ex" : {
+      "size_type" : "auto",
+      "src" : "https://25995259.fs1.hubspotusercontent-eu1.net/hubfs/25995259/Checkmark%20Copy%204%20(1)-1.png",
+      "alt" : "Checkmark Copy 4 (1)-1",
+      "loading" : "lazy",
+      "width" : 37,
+      "height" : 36,
+      "max_width" : 37,
+      "max_height" : 36
+    },
+    "subheading" : "High fees"
+  }
+}, {
+  "id" : "88b5d561-20b8-bfda-4407-d028064d5583",
+  "name" : "button_field",
+  "display_width" : null,
+  "label" : "Button Field",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : 1,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "132e71b1-1931-c646-0c54-92997419bf39",
+    "name" : "button_text",
+    "display_width" : null,
+    "label" : "Button Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Request a Proposal"
+  }, {
+    "id" : "239e6277-8f42-b671-75bc-01a3a33b84ec",
+    "name" : "url_field",
+    "display_width" : null,
+    "label" : "URL",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "type" : "url",
+    "default" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "EXTERNAL"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "button_text" : "Request a Proposal",
+    "url_field" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "EXTERNAL"
+    }
+  }
+} ]

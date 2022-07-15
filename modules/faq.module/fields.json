@@ -1,0 +1,127 @@
+[ {
+  "id" : "c2d883fa-1222-1fd3-f9d0-98342e12fceb",
+  "name" : "small_heading",
+  "display_width" : null,
+  "label" : "Small Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "low-cost 401(k) plan Services"
+}, {
+  "id" : "4584c3e2-55e2-1519-caf1-e6a0382e86e4",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Your Path to a Faster Retirement Starts Here"
+}, {
+  "id" : "2dff2d80-61d8-b16b-2561-2bb783a08feb",
+  "name" : "description",
+  "display_width" : null,
+  "label" : "Description",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Starting a new 401(k) can seem overwhelming. We’re going to lay it out for you in a way that’s straightforward and transparent. Here are the steps."
+}, {
+  "id" : "3c71a573-a1f9-c50c-38dc-3a10fdd9b3e2",
+  "name" : "row_field_left",
+  "display_width" : null,
+  "label" : "Row Field Left",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : 5,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "a336f221-9212-13fa-c26d-61630a252c8c",
+    "name" : "heading_left",
+    "display_width" : null,
+    "label" : "Heading",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Your Path to a Faster Retirement Starts Here"
+  }, {
+    "id" : "eeca739b-cf1e-88f3-e15d-452a05992ef7",
+    "name" : "description_left",
+    "display_width" : null,
+    "label" : "Description",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer scelerisque suscipit accumsan. Donec eu lobortis nunc. Column description text goes here."
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "heading_left" : "Your Path to a Faster Retirement Starts Here",
+    "description_left" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer scelerisque suscipit accumsan. Donec eu lobortis nunc. Column description text goes here."
+  }
+}, {
+  "id" : "3ef85343-614b-5d47-261b-91c3c070c007",
+  "name" : "row_field_right",
+  "display_width" : null,
+  "label" : "Row Field Right",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : 5,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "d678f663-51bb-d4ef-f7bf-863960dbd5de",
+    "name" : "heading_right",
+    "display_width" : null,
+    "label" : "Heading",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Your Path to a Faster Retirement Starts Here"
+  }, {
+    "id" : "0ad5f0f0-d751-4f4b-30fe-a732256c3458",
+    "name" : "description_right",
+    "display_width" : null,
+    "label" : "Description",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer scelerisque suscipit accumsan. Donec eu lobortis nunc. Column description text goes here."
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "heading_right" : "Your Path to a Faster Retirement Starts Here",
+    "description_right" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer scelerisque suscipit accumsan. Donec eu lobortis nunc. Column description text goes here."
+  }
+} ]

@@ -1,0 +1,64 @@
+<section class="split-columns">
+     <div class="container">
+          <div class="row {{ module.module_order == 'image-right' ? ' order-reverse' : '' }}">
+               {# img #}
+               <div class="col-md-6">
+                    <div class="split-columns__img">
+                         {% if module.image_field.src %}
+                              <div style="background-image: url('{{ module.image_field.src }}')" class="split-columns__img-image"></div>
+                         {% endif %}
+                    </div>
+               </div>
+
+               {# text #}
+               <div class="col-md-6">
+                      {# heading#}   
+                    <div class="split-columns__text">  
+                      {# small heading, heading, description #}
+                         <div class="split-columns__text-head">
+                           {% if module.small_heading %}
+                             <div class="split-columns__text-head-subheading subheading">{{ module.small_heading }}</div>
+                           {% endif %}
+                           
+                           {% if module.heading %}
+                              <div class="split-columns__text-head-heading heading">{{ module.heading }}</div>
+                           {% endif %}
+                           
+                           {% if module.description %}
+                              <div class="split-columns__text-head-description description">{{ module.description }}</div>
+                           {% endif %}
+                         </div>
+
+
+                         {# subheading #}
+                         <div class="split-columns__text-subhead">
+                              {% for item in module.subheading_field %}
+                                   <div class="split-columns__text-subhead-con">
+                                        <div class="split-columns__text-subhead-ico">
+                                             {% if item.image_ex.src %}
+                                                  <div style="background-image: url('{{ item.image_ex.src }}')" class="split-columns__text-subhead-img-ex"></div>
+                                             {% endif %}
+                                             <div class="split-columns__text-subhead-subheading">
+                                                  {{ item.subheading }}
+                                             </div>
+                                        </div>
+                                        <div class="split-columns__text-subhead-description description">
+                                             {{ item.description }}
+                                        </div>     
+                                   </div>
+                              {% endfor %}  
+                         </div>
+                      
+                      <!--     btn     -->
+                      <div class="split-columns__text-buttons buttons">
+                        {% for item in module.button_field  %}
+                          <a href="{{ item.url_field.href }}" class="btn btn-{{ item.button_text }}">{{ item.button_text }}</a>
+                        {% endfor %}
+                      </div>
+                  
+                  </div>          
+
+               </div>
+          </div> 
+     </div>
+</section>

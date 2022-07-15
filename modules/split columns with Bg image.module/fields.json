@@ -1,0 +1,191 @@
+[ {
+  "id" : "dffc73b0-d6a0-afd6-f94e-23f419bcc784",
+  "name" : "small_heading",
+  "display_width" : null,
+  "label" : "Small Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Low-cost 401(k) plan Services"
+}, {
+  "id" : "1b64d9b8-75e2-ea7d-dc27-38ad7cb7c7cd",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "How Employee Fiduciary Will Help You Retire Sooner"
+}, {
+  "id" : "dc8bcd34-881c-b4cc-55e1-fd39963c8004",
+  "name" : "description",
+  "display_width" : null,
+  "label" : "Description",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Nobody makes it easier to avoid 401(k) pitfalls than Employee Fiduciary. Here's how we do it:"
+}, {
+  "id" : "19aef91f-0c29-5aae-73e5-297939759b87",
+  "name" : "image_Bg",
+  "display_width" : null,
+  "label" : "Image Bg",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://25995259.fs1.hubspotusercontent-eu1.net/hubfs/25995259/Rectangle%20Copy%2023.png",
+    "alt" : "Rectangle Copy 23",
+    "loading" : "lazy",
+    "width" : 1900,
+    "height" : 830,
+    "max_width" : 1900,
+    "max_height" : 830
+  }
+}, {
+  "id" : "180bcaf1-51b7-1123-6745-070b71efebe4",
+  "name" : "subheading_field",
+  "display_width" : null,
+  "label" : "Subheading Fields",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : 3,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "15b57862-3cd2-ef7f-d256-72f027c64c2d",
+    "name" : "image_check",
+    "display_width" : null,
+    "label" : "Image check",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://25995259.fs1.hubspotusercontent-eu1.net/hubfs/25995259/Checkmark%20Copy%204-1.png",
+      "alt" : "Checkmark Copy 4-1",
+      "loading" : "lazy",
+      "width" : 37,
+      "height" : 36,
+      "max_width" : 37,
+      "max_height" : 36
+    }
+  }, {
+    "id" : "64b3ff58-cf01-4c72-8377-c9a1f0a9a233",
+    "name" : "subheading",
+    "display_width" : null,
+    "label" : "Subheading",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : null,
+      "max" : 3,
+      "sorting_label_field" : null,
+      "default" : null
+    },
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Low and transparent fees"
+  }, {
+    "id" : "5bbd2202-2814-8ce8-6a7a-3b65079c07c1",
+    "name" : "description",
+    "display_width" : null,
+    "label" : "Description",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Know you are paying as little as possible with our transparent fees. "
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "image_check" : {
+      "size_type" : "auto",
+      "src" : "https://25995259.fs1.hubspotusercontent-eu1.net/hubfs/25995259/Checkmark%20Copy%204-1.png",
+      "alt" : "Checkmark Copy 4-1",
+      "loading" : "lazy",
+      "width" : 37,
+      "height" : 36,
+      "max_width" : 37,
+      "max_height" : 36
+    },
+    "subheading" : "Low and transparent fees",
+    "description" : "Know you are paying as little as possible with our transparent fees. "
+  }
+}, {
+  "id" : "efc0cc4e-8dc1-f7ef-a079-6845534cf433",
+  "name" : "button_field",
+  "display_width" : null,
+  "label" : "Button Field",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : 1,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "8b8c40bc-3ae2-66be-735b-859c3d6e5920",
+    "name" : "url_field",
+    "display_width" : null,
+    "label" : "URL",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "type" : "url",
+    "default" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "EXTERNAL"
+    }
+  }, {
+    "id" : "07008e00-d447-fc79-c583-862f41f08bc1",
+    "name" : "button_text",
+    "display_width" : null,
+    "label" : "Button Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Request a Proposal"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "url_field" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "EXTERNAL"
+    },
+    "button_text" : "Request a Proposal"
+  }
+} ]

@@ -1,0 +1,61 @@
+{# img #}
+<section class="split-columns-bg-image" style="background-image: url('{{ module.image_Bg.src }}')">
+<div class="split-columns-bg-image__overlay"></div>
+<div class="container">
+    <div class="row">
+        {# text #}
+        <div class="col-md-6">  
+          <div class="split-columns-bg-image__text">
+            {# heading #} 
+            {# small heading, heading, description #}
+            {% if module.small_heading %}
+              <div class="split-columns-bg-image__text-subheading subheading">{{ module.small_heading }}</div>
+            {% endif %}
+            
+            {% if module.heading %}
+              <div class="split-columns-bg-image__text-heading heading">{{ module.heading }}</div>
+            {% endif %}
+            
+            {% if module.description %}
+              <div class="split-columns-bg-image__text-heading-description description">{{ module.description }}</div>
+            {% endif %}
+          
+            
+            <!--        subheading    -->
+            <div class="split-columns-bg-image__text-subhead">
+              {% for item in module.subheading_field %}
+                <div class="split-columns-bg-image__text-subhead-con">
+                  <div class="split-columns-bg-image__text-subhead-ico">
+
+             
+                    {% if item.image_check.src %}
+                      <div style="background-image: url('{{ item.image_check.src }}')" class="split-columns-bg-image__text-subhead-img-check"></div>
+                    {% endif %}
+                  
+                    
+                  
+                    <div class="split-columns-bg-image__text-subhead-subheading">
+                    {{ item.subheading }}
+                    </div>
+                  </div>
+
+                  <div class="split-columns-bg-image__text-subhead-description description">
+                    {{ item.description }}
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+
+            <!--     btn     -->
+            <div class="split-columns-bg-image__text-buttons buttons">
+              {% for item in module.button_field  %}
+                <a href="{{ item.url_field.href }}" class="btn btn-{{ item.button_text }}">{{ item.button_text }}</a>
+              {% endfor %}
+            </div>
+
+          </div> 
+        </div>
+      
+    </div>
+    </div>
+</section>

@@ -1,0 +1,63 @@
+<section class="logos">
+  <div class="container">
+    
+      <!--    text    -->
+      {# small heading, heading, description #}
+      <div class="logos__con">
+         {% if module.small_heading %}
+            <div class="logos__con-subheading subheading">{{ module.small_heading }}</div>
+         {% endif %}
+      
+         {% if module.heading %}
+            <div class="logos__con-heading heading">{{ module.heading }}</div>
+         {% endif %}
+      
+         {% if module.description %}
+            <div class="logos__con-description description">{{ module.description }}</div>
+         {% endif %}
+      </div>
+
+      <!-- Swiper -->
+      <div class="logos__slider-holder">
+
+   
+         {# arrow prev #}
+         <div class="logos__slider__nav-prev">
+            <svg width="15" height="26" viewBox="0 0 15 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path class="logos__slider__nav-prev-icon" fill-rule="evenodd" clip-rule="evenodd" d="M0.5 13C0.5 13.2004 0.59622 13.4259 0.74055 13.5762L11.9502 25.2495C12.0945 25.3998 12.311 25.5 12.5034 25.5C12.6959 25.5 12.9124 25.3998 13.0567 25.2495L14.2595 23.997C14.4038 23.8467 14.5 23.6212 14.5 23.4208C14.5 23.2204 14.4038 22.995 14.2595 22.8447L4.80584 13L14.2595 3.15531C14.4038 3.00501 14.5 2.77956 14.5 2.57916C14.5 2.35371 14.4038 2.15331 14.2595 2.00301L13.0567 0.750501C12.9124 0.6002 12.6959 0.5 12.5034 0.5C12.311 0.5 12.0945 0.6002 11.9502 0.750501L0.74055 12.4238C0.59622 12.5741 0.5 12.7996 0.5 13Z" fill="#3258A3"/>
+            </svg>
+         </div>
+
+
+         <div class="logos__slider swiper-container">
+
+            {# logos #}
+            <div class="swiper-wrapper">
+               {% for item in module.image_field %} 
+                  {% if item.image_field.src %}
+                     <div class="logos__slide swiper-slide">
+                        <img src="{{ item.image_field.src }}"/>
+                     </div>
+                  {% endif %}
+               {% endfor %}    
+            </div>
+       
+
+            {# Pagination#}
+            <div class="swiper-pagination">
+               <span class="logos__pagination-bullet"> </span>
+            </div>
+
+         </div>
+
+          {# arrow next #}
+         <div class="logos__slider__nav-next logos__slider__nav-btn">
+            <svg  width="15" height="26" viewBox="0 0 15 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path class="logos__slider__nav-next-icon" fill-rule="evenodd" clip-rule="evenodd" d="M14.5 13C14.5 13.2004 14.4038 13.4259 14.2594 13.5762L3.04983 25.2495C2.9055 25.3998 2.689 25.5 2.49656 25.5C2.30412 25.5 2.08763 25.3998 1.9433 25.2495L0.74055 23.997C0.59622 23.8467 0.5 23.6212 0.5 23.4208C0.5 23.2204 0.59622 22.995 0.74055 22.8447L10.1942 13L0.74055 3.15531C0.59622 3.00501 0.5 2.77956 0.5 2.57916C0.5 2.35371 0.59622 2.15331 0.74055 2.00301L1.9433 0.750501C2.08763 0.6002 2.30412 0.5 2.49656 0.5C2.689 0.5 2.9055 0.6002 3.04983 0.750501L14.2594 12.4238C14.4038 12.5741 14.5 12.7996 14.5 13Z" fill="#CECED6"/>
+            </svg>
+         </div>
+
+      </div>
+
+    </div>
+</section>

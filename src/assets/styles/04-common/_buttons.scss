@@ -1,0 +1,32 @@
+.buttons {
+    display: flex;
+    align-items: center;
+
+    .btn {
+        margin-left: 20px;
+
+        &:first-of-type {
+            margin-left: 0;
+        }
+    }
+}
+
+.btn {
+    border-radius: 30px;
+    padding: 20px 24px;
+    background: #B01313;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+
+    &.btn-ghost {
+        background: transparent;
+        color: #313155;
+        border: 2px solid #D0D5DF;
+    }
+    &.btn-secondary {
+        background: #3258A3;
+    }
+}

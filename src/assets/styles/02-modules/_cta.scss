@@ -1,0 +1,52 @@
+.cta {
+    padding-top: 58px;
+
+    &-con {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &__img {
+        width: 100%;
+        max-width: 1049px;
+        height: auto;
+        background-repeat: no-repeat;
+        background-position: center center;
+        margin-bottom: 49px;
+    }
+
+    // text
+    // small heading, heading, description
+    &__subheading {
+        margin-bottom: 13px;
+        text-align: center;
+        margin-top: 60px;
+    }
+
+    &__heading {
+        margin-bottom: 19px;
+        max-width: 882px;
+        text-align: center;
+    }
+
+    &__description {
+        margin-bottom: 49px;
+        max-width: 780px;
+        text-align: center;
+    }
+
+    &__buttons {
+        margin-bottom: 75px;
+
+    }
+
+    // bg color
+    &.light-blue-color {
+        background-color: #E9F5F5;
+    }
+
+    &.white-color {
+        background-color: #fff;
+    }
+}

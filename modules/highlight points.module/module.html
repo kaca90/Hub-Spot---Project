@@ -1,0 +1,26 @@
+<section class="highlight-points {{ module.bg_color == 'light blue' ? 'light-blue-color' : 'white-color' }}">
+  <div class="container">
+    <div class="row {{ module.text_order == 'text-left' ? ' text-left' : module.text_order == 'text-right' ? ' text-right' : ' text-center' }}">
+      {% for item in module.column_field %}
+        <div class="col-md-4 highlight-points__col">
+          <div class="highlight-points__column {{ module.box_shadow == 'no' ? ' no' : ''}} {{ module.bg_color == 'light blue' ? 'light-blue-color' : 'white-color' }}">
+            
+              <!--      circle - title          -->
+              <div class="highlight-points__column__con">
+                <div class="highlight-points__column-circle"></div> 
+                <span class="highlight-points__column-title">{{ item.title }}</span>
+              </div>
+            
+            <!--       heading        -->
+            <div class="highlight-points__column-heading">
+              {{ item.heading }}
+            </div>
+            <div class="highlight-points__column-description description">
+              {{ item.description }}
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

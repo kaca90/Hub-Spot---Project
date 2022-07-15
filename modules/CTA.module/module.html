@@ -1,0 +1,37 @@
+<section class="cta {{ module.bg_color == 'light blue' ? 'light-blue-color' : 'white-color' }}">
+  <div class="container">
+      <div class="cta-con">
+        {# img #}
+        {% if module.image_field.src %}
+        <div class="cta__image">
+          <img src="{{ module.image_field.src }}" class="cta__image-img"/>
+        </div>
+        {% endif %}
+
+        <!--    text    -->
+        {# small heading, heading, description #}
+         {% if module.small_heading %}
+            <div class="cta__subheading subheading">{{ module.small_heading }}</div>
+         {% endif %}
+        
+         {% if module.heading %}
+            <div class="cta__heading heading">{{ module.heading }}</div>
+         {% endif %}
+        
+         {% if module.description %}
+            <div class="cta__description description">{{ module.description }}</div>
+         {% endif %}
+        
+        
+        <!--     btn     -->
+        <div class="cta__buttons buttons">
+          {% for item in module.button %}
+          <a href="{{ item.url_field.href }}" class="btn btn-{{ item.button_type }}">{{ item.button_text }}</a>
+          {% endfor %}
+        </div>
+      </div>
+  </div>
+</section>
+
+
+

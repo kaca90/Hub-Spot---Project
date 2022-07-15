@@ -1,0 +1,123 @@
+.logos {
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 90px;
+
+    .container {
+        position: relative;
+    }
+
+    &__slide {
+        display: flex;
+        justify-content: center;
+    }
+
+    //  text  
+    // small heading, heading, description
+    &__con {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        // small heading, heading, description
+        &-subheading {
+            max-width: 882px;
+            margin-bottom: 13px;
+            text-align: center;
+        }
+
+        &-heading {
+            margin-bottom: 19px;
+            text-align: center;
+            max-width: 882px;
+        }
+
+        &-description {
+            margin-bottom: 49px;
+            text-align: center;
+            max-width: 780px;
+        }
+    }
+
+    // swiper
+    &__slider-holder {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    // arrows
+    .logos__slider__nav-prev,
+    .logos__slider__nav-next {
+        display: flex;
+
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+
+        svg path {
+            fill: #CECED6;
+            transition: 250ms fill ease;
+        }
+
+        &:hover {
+            svg path {
+                fill: #3258A3;
+            }
+        }
+    }
+
+    .logos__slider__nav-prev {
+        display: flex;
+        justify-content: start;
+        left: -33px;
+    }
+
+    .logos__slider__nav-next {
+        display: flex;
+        justify-content: end;
+        right: -33px;
+    }
+
+    // logos
+    .swiper-slide {
+        height: 100%;
+        width: auto;
+        padding: 30px;
+        margin: 30px 0 40px 0;
+
+
+        img {
+            width: auto;
+            height: auto;
+            object-fit: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+
+
+        }
+    }
+
+
+
+    // pagination
+    .swiper-pagination {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .swiper-pagination-bullet {
+        width: 45px;
+        height: 3px;
+        border-radius: 1.5px;
+        margin: 0 5px;
+        cursor: pointer;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: #3258A3;
+    }
+}
