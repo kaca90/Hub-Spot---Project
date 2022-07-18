@@ -1,24 +1,21 @@
-<section class="highlight-points {{ module.bg_color == 'light blue' ? 'light-blue-color' : 'white-color' }}">
+<section class="highlight-points">
   <div class="container">
-    <div class="row {{ module.text_order == 'text-left' ? ' text-left' : module.text_order == 'text-right' ? ' text-right' : ' text-center' }}">
+    <div class="row">
       {% for item in module.column_field %}
-        <div class="col-md-4 highlight-points__col">
-          <div class="highlight-points__column {{ module.box_shadow == 'no' ? ' no' : ''}} {{ module.bg_color == 'light blue' ? 'light-blue-color' : 'white-color' }}">
-            
-              <!--      circle - title          -->
-              <div class="highlight-points__column__con">
-                <div class="highlight-points__column-circle"></div> 
-                <span class="highlight-points__column-title">{{ item.title }}</span>
-              </div>
-            
-            <!--       heading        -->
-            <div class="highlight-points__column-heading">
-              {{ item.heading }}
+        <div class="col-md-4 last-point">
+          {# <div class="highlight-points__col"> #}
+            <div class="highlight-points__column">
+
+              {# title #}
+              <div class="highlight-points__column-title">
+                <span>{{ item.title }}</span>
+              </div> 
+
+              {# heading #}
+              <div class="highlight-points__column-heading">{{ item.heading }}</div>
+           
             </div>
-            <div class="highlight-points__column-description description">
-              {{ item.description }}
-            </div>
-          </div>
+          {# </div> #}
         </div>
       {% endfor %}
     </div>

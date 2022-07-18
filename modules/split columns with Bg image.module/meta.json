@@ -3,6 +3,6 @@
   "icon" : "fontawesome-5.14.0:Algolia",
   "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
   "module_id" : 50293382382,
-  "label" : "Button Field",
+  "label" : "Split columns with Bg image",
   "is_available_for_new_content" : true
 }

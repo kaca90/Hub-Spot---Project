@@ -130,15 +130,4 @@
   "choices" : [ [ "yes", "Yes" ], [ "no", "No" ] ],
   "type" : "choice",
   "default" : "yes"
-}, {
-  "id" : "35f73223-cfa1-6d4f-db56-d257727e9ec8",
-  "name" : "bg_color",
-  "display_width" : null,
-  "label" : "Bg Color",
-  "required" : false,
-  "locked" : false,
-  "display" : "select",
-  "choices" : [ [ "light blue", "Light Blue" ], [ "white", "White" ] ],
-  "type" : "choice",
-  "default" : "white"
 } ]

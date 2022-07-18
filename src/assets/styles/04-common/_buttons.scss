@@ -26,7 +26,21 @@
         color: #313155;
         border: 2px solid #D0D5DF;
     }
+
     &.btn-secondary {
         background: #3258A3;
     }
+}
+
+.btn-primary:hover {
+    background: #941817;
+}
+
+.btn-ghost:hover {
+    background: #3258A3;
+    color: #FFFFFF;
+}
+
+.btn-secondary:hover {
+    background: #354879;
 }

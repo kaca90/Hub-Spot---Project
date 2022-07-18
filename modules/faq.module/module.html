@@ -1,65 +1,71 @@
 <section class="faq">
   <div class="container">
     {# small heading, heading, description #}
-        <div class="faq__con">
-          {% if module.small_heading %}
-            <div class="faq__con-subheading subheading">{{ module.small_heading }}</div>
-          {% endif %}
+    <div class="faq__con">
+      {% if module.small_heading %}
+        <div class="faq__con-subheading subheading">{{ module.small_heading }}</div>
+      {% endif %}
 
-          {% if module.heading %}
-            <div class="faq__con-heading heading">{{ module.heading }}</div>
-          {% endif %}
-        
-          {% if module.description %}
-            <div class="faq__con-description description">{{ module.description }}</div>
-          {% endif %}
-        </div>
+      {% if module.heading %}
+        <div class="faq__con-heading heading">{{ module.heading }}</div>
+      {% endif %}
+    
+      {% if module.description %}
+        <div class="faq__con-description description">{{ module.description }}</div>
+      {% endif %}
+    </div>
     
     <div class="row {{ module.text_order == 'text-left' ? ' text-left' : module.text_order == 'text-right' ? ' text-right' : ' text-center' }}">
-     {# row field left #}
-     <div class="col-md-6">
-        <div class="left">
-          {% for item in module.row_field_left %}
+    
+      {# left #}
+      <div class="col-md-6">
+        {% for item in module.row_field %} 
+          {% if loop.index %2 != 0 %}
+            <div class="left">
+              <div class="faq__row-field">
+
+                <div class="faq__row-field-con">
+                  <div class="faq__row-field-question">
+                    {{ item.heading}}
+                  </div>
+                  <div class="faq__row-field-image"></div>
+                </div>
+
+                <div class="faq__row-field-answer">
+                  {{ item.description}}
+                </div>
+                    
+              </div>
+            </div> 
+          {% endif %}
+        {% endfor %}
+      </div>
+
+      {# right #}
+      <div class="col-md-6">
+        {% for item in module.row_field %}
+          {% if loop.index %2 == 0 %}<div class="right">
             <div class="faq__row-field">
 
               <div class="faq__row-field-con">
                 <div class="faq__row-field-question">
-                  {{ item.heading_left}}
+                  {{ item.heading}}
                 </div>
                 <div class="faq__row-field-image"></div>
               </div>
 
               <div class="faq__row-field-answer">
-                {{ item.description_left }}
-              </div>
-                  
-            </div>
-          {% endfor %}
-        </div> 
-      </div>
-
-      {# row field rght #}
-      <div class="col-md-6">
-        <div class="right">
-          {% for item in module.row_field_right%}
-            <div class="faq__row-field" id="myBtnRight">
-
-              <div class="faq__row-field-con">
-                <div class="faq__row-field-question">
-                  {{ item.heading_right }}
-                </div>
-                <div class="faq__row-field-image"></div>
-              </div>
-
-              <div class="faq__row-field-answer">
-                {{ item.description_right }}
+                {{ item.description}}
               </div>
                 
+              </div>
             </div>
-          {% endfor %}
-        </div>
+          {% endif %}
+        {% endfor %}
       </div>
-    
+
+      {# end row #}
     </div>
+    {# end container #}
   </div>
 </section>

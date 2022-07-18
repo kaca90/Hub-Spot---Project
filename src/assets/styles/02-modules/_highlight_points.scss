@@ -1,70 +1,16 @@
 .highlight-points {
-    margin: 0 0;
-    padding: 75px 0;
+    padding: 50px;
     background-color: #E9F5F5;
     width: 100%;
-    height: 310px;
-  
-    // bg color - highlight points
-    &.light-blue-color {
-        background-color: #E9F5F5;
-    }
-
-    &.white-color {
-        background-color: #fff;
-    }
-  
-    // text order
-    .row {
-        &.text-left {
-            text-align: left;
-
-            .highlight-points__column {
-                align-items: start;
-            }
-        }
-
-        &.text-right {
-            text-align: right;
-
-            .highlight-points__column {
-                align-items: end;
-            }
-        }
-
-        &.text-center {
-            text-align: center;
-
-            .highlight-points__column {
-                align-items: center;
-            }
-        }
-    }
+    height: 100%;
+    text-align: center;
 
     // column
     &__column {
-        justify-content: stretch;
         display: flex;
         flex-direction: column;
-        background-color: #E9F5F5;
-        border-radius: 3px;
-        
-        &__con {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-        }
-
-        // circle - title
-        &-circle {
-            margin-bottom: 19px;
-            width: 107px;
-            height: 107px;
-            background-color: #fff;
-            border-radius: 50%;
-        }
-
+        align-items: center;
+      
         &-title {
             font-weight: 700;
             font-size: 45px;
@@ -75,7 +21,7 @@
             margin-bottom: 13px;
             height: 107px;
             padding: 26px 0;
-            position: absolute;
+            position: relative;
 
             span {
                 z-index: 2;
@@ -83,14 +29,22 @@
             }
         }
 
-        // bg color - column
-        &.light-blue-color {
-            background-color: #E9F5F5;
+
+
+        // circle
+        &-title:before {
+            content: "";
+            width: 107px;
+            height: 107px;
+            background: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            z-index: 1;
         }
 
-        &.white-color {
-            background-color: #fff;
-        }
 
         // heading
         &-heading {
@@ -101,13 +55,14 @@
             letter-spacing: -0.218182px;
             color: #313155;
             max-width: 272px;
+
         }
     }
 
 }
 
 // border right
-.highlight-points__col {
+.last-point {
     border-right: 2px solid rgba(67, 97, 157, 0.1);
 
     &:last-child {

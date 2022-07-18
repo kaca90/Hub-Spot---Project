@@ -36,17 +36,11 @@
   "default" : "No 401(k) provider makes it easier for small and medium-sized businesses to offer such plans than Employee Fiduciary. With us, you’ll feel confident that you’re not being taken advantage of and are on the right path to retirement."
 }, {
   "id" : "6533c220-6155-eb1e-a017-6516f51f8db1",
-  "name" : "button",
+  "name" : "button_field",
   "display_width" : null,
-  "label" : "Buttons",
+  "label" : "Button Field",
   "required" : false,
   "locked" : false,
-  "occurrence" : {
-    "min" : null,
-    "max" : 1,
-    "sorting_label_field" : null,
-    "default" : null
-  },
   "children" : [ {
     "id" : "b07d381b-df87-e5a7-782d-912023186835",
     "name" : "button_text",

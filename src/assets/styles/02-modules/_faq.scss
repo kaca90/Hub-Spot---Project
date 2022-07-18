@@ -1,4 +1,6 @@
 .faq {
+    // width: 100%;
+    // height: 100%;
     margin-top: 100px;
     margin-bottom: 150px;
 
@@ -57,7 +59,7 @@
 
     // row field
     &__row-field {
-        border-bottom: 1px solid #D0D9E5;
+        // border-bottom: 1px solid #D0D9E5;
         max-width: 576px;
 
         &-con {
@@ -110,6 +112,10 @@
             justify-content: center;
         }
 
+    }
+
+    &__row-field:last-child {
+        border-bottom: 1px solid #D0D9E5;
     }
 
 }

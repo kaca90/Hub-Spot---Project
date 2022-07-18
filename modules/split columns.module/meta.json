@@ -3,6 +3,6 @@
   "icon" : "fontawesome-5.14.0:Alternate%20List",
   "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
   "module_id" : 50379764953,
-  "label" : "Button Field",
+  "label" : "Split Columns",
   "is_available_for_new_content" : true
 }

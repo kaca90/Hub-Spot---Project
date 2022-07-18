@@ -29,33 +29,41 @@
                            {% endif %}
                          </div>
 
-
+                        
                          {# subheading #}
                          <div class="split-columns__text-subhead">
                               {% for item in module.subheading_field %}
                                    <div class="split-columns__text-subhead-con">
+                                        
+                                        {% if item.image_ex.src %}
+                                             <div class="split-columns__text-subhead-img-ex">
+                                                  <svg width="37" height="36" viewBox="0 0 37 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                       <ellipse cx="18.2744" cy="17.5976" rx="18.2744" ry="17.5976" fill="#B01313" fill-opacity="0.08"/>
+                                                       <path fill-rule="evenodd" clip-rule="evenodd" d="M10.3556 24.176C10.3556 23.896 10.4687 23.6332 10.6744 23.4352L16.7361 17.5977L10.6744 11.7599C10.4687 11.5622 10.3556 11.2991 10.3556 11.0195C10.3556 10.7398 10.4687 10.4767 10.6744 10.2787C10.8801 10.0812 11.1529 9.97195 11.4433 9.97195C11.7337 9.97195 12.0069 10.0812 12.2122 10.2787L18.2743 16.1164L24.3367 10.2787C24.542 10.0812 24.8152 9.97195 25.1056 9.97195C25.396 9.97195 25.6689 10.0812 25.8745 10.2787C26.0799 10.4764 26.1934 10.7398 26.1934 11.0195C26.1934 11.2991 26.0799 11.5622 25.8745 11.7599L19.8125 17.5977L25.8745 23.4352C26.0799 23.6332 26.1934 23.896 26.1934 24.176C26.1934 24.4556 26.0799 24.7187 25.8745 24.9164C25.6689 25.1142 25.396 25.2232 25.1056 25.2232C24.8152 25.2232 24.542 25.1142 24.3367 24.9164L18.2743 19.079L12.2122 24.9164C12.0069 25.1142 11.7337 25.2232 11.4433 25.2232C11.1529 25.2232 10.8801 25.1142 10.6744 24.9164C10.4684 24.7187 10.3556 24.4559 10.3556 24.176Z" fill="#B01313"/>
+                                                  </svg>
+                                             </div>
+                                        {% endif %}    
+                                        
+
                                         <div class="split-columns__text-subhead-ico">
-                                             {% if item.image_ex.src %}
-                                                  <div style="background-image: url('{{ item.image_ex.src }}')" class="split-columns__text-subhead-img-ex"></div>
-                                             {% endif %}
                                              <div class="split-columns__text-subhead-subheading">
                                                   {{ item.subheading }}
                                              </div>
-                                        </div>
-                                        <div class="split-columns__text-subhead-description description">
-                                             {{ item.description }}
-                                        </div>     
+                                             <div class="split-columns__text-subhead-description description">
+                                                  {{ item.description }}
+                                             </div> 
+                                        </div>    
                                    </div>
                               {% endfor %}  
                          </div>
-                      
-                      <!--     btn     -->
-                      <div class="split-columns__text-buttons buttons">
-                        {% for item in module.button_field  %}
-                          <a href="{{ item.url_field.href }}" class="btn btn-{{ item.button_text }}">{{ item.button_text }}</a>
-                        {% endfor %}
-                      </div>
-                  
+                    
+                         <!--     btn     -->
+                         {% for item in module.button_field %}
+                         <div class="split-columns__text-buttons buttons">
+                              <a href="{{ item.url_field.href }}" class="btn btn-{{ item.button_type }}">{{ item.button_text }}</a>
+                         </div>
+                         {% endfor %}
+                                
                   </div>          
 
                </div>

@@ -22,7 +22,6 @@
             border-radius: 0 100px 0 100px;
             background-position: center top;
             background-size: cover;
-            // background-size: contain;
         }
     }
 
@@ -58,23 +57,22 @@
             &-con {
                 border-bottom: 2px solid #F6F6F8;
                 margin-bottom: 45px;
+                width: 100%;
+                display: flex;
 
                 &:last-child {
                     margin-bottom: 0;
                 }
             }
 
-            &-ico {
-                display: flex;
-                align-items: center;
-            }
 
             &-img-ex {
-                width: 36.55px;
-                height: 35.2px;
-                margin-right: 20px;
-                display: inline-block;
-                background-repeat: no-repeat;
+
+                svg {
+                    width: 37px;
+                    height: 37px;
+                    margin-right: 20px;
+                }
             }
 
             &-subheading {
@@ -89,17 +87,13 @@
 
             &-description {
                 margin-bottom: 35px;
-
+                margin-top: 4px;
             }
 
         }
 
-
+        &-buttons {
+            margin-top: 20px;
+        }
     }
-
-
-
-
 }
-
-

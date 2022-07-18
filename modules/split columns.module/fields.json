@@ -57,14 +57,7 @@
   "show_loading" : false,
   "type" : "image",
   "default" : {
-    "size_type" : "auto",
-    "src" : "https://25995259.fs1.hubspotusercontent-eu1.net/hubfs/25995259/Group%206%20(1).png",
-    "alt" : "Group 6 (1)",
-    "loading" : "lazy",
-    "width" : 613,
-    "height" : 717,
-    "max_width" : 613,
-    "max_height" : 717
+    "src" : ""
   }
 }, {
   "id" : "180bcaf1-51b7-1123-6745-070b71efebe4",
@@ -146,7 +139,7 @@
   "locked" : false,
   "occurrence" : {
     "min" : null,
-    "max" : 1,
+    "max" : 2,
     "sorting_label_field" : null,
     "default" : null
   },
@@ -176,6 +169,17 @@
       "href" : "",
       "type" : "EXTERNAL"
     }
+  }, {
+    "id" : "882a6592-3298-fb05-266a-7d64e463c643",
+    "name" : "button_type",
+    "display_width" : null,
+    "label" : "Button Type",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "primary", "Primary" ], [ "ghost", "Ghost" ], [ "secondary", "Secondary" ] ],
+    "type" : "choice",
+    "default" : "primary"
   } ],
   "tab" : "CONTENT",
   "expanded" : false,
@@ -186,6 +190,7 @@
       "content_id" : null,
       "href" : "",
       "type" : "EXTERNAL"
-    }
+    },
+    "button_type" : "primary"
   }
 } ]

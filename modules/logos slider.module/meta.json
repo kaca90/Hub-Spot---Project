@@ -3,5 +3,6 @@
   "icon" : "fontawesome-5.14.0:Alternate%20Ticket:SOLID",
   "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
   "module_id" : 50498710970,
+  "label" : "Logos Slider",
   "is_available_for_new_content" : true
 }

@@ -43,25 +43,4 @@
     "title" : "4,000+",
     "heading" : "Lowest Fees in the Country"
   }
-}, {
-  "id" : "cc9427e5-25d8-c9dd-7021-2876fcbc8ef0",
-  "name" : "bg_color",
-  "display_width" : null,
-  "label" : "Bg Color",
-  "required" : false,
-  "locked" : false,
-  "display" : "select",
-  "choices" : [ [ "light blue", "Light Blue" ], [ "white", "White" ] ],
-  "type" : "choice",
-  "default" : "light blue"
-}, {
-  "id" : "ec723e5c-9b47-f943-28cc-21dc4c09dc83",
-  "name" : "text_order",
-  "display_width" : null,
-  "label" : "Text Order",
-  "required" : false,
-  "locked" : false,
-  "display" : "select",
-  "choices" : [ [ "text-left", "Text-left" ], [ "text-right", "Text-right" ], [ "text-center", "Text-center" ] ],
-  "type" : "choice"
 } ]

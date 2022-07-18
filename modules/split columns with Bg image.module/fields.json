@@ -144,12 +144,6 @@
   "label" : "Button Field",
   "required" : false,
   "locked" : false,
-  "occurrence" : {
-    "min" : null,
-    "max" : 1,
-    "sorting_label_field" : null,
-    "default" : null
-  },
   "children" : [ {
     "id" : "8b8c40bc-3ae2-66be-735b-859c3d6e5920",
     "name" : "url_field",
@@ -176,6 +170,17 @@
     "show_emoji_picker" : false,
     "type" : "text",
     "default" : "Request a Proposal"
+  }, {
+    "id" : "212ec06f-3e90-34eb-34fe-eb442090eef6",
+    "name" : "button_type",
+    "display_width" : null,
+    "label" : "Button Type",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "primary", "Primary" ], [ "ghost", "Ghost" ], [ "secondary", "Secondary" ] ],
+    "type" : "choice",
+    "default" : "primary"
   } ],
   "tab" : "CONTENT",
   "expanded" : false,
@@ -186,6 +191,7 @@
       "href" : "",
       "type" : "EXTERNAL"
     },
-    "button_text" : "Request a Proposal"
+    "button_text" : "Request a Proposal",
+    "button_type" : "primary"
   }
 } ]
