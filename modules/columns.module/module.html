@@ -18,24 +18,25 @@
 
       <div class="row {{ module.text_order == 'text-left' ? ' text-left' : module.text_order == 'text-right' ? ' text-right' : ' text-center' }}">
         {% for item in module.column_field %}
-          <div class="col-md-4">
-            <div class="columns__column{{ module.box_shadow == 'no' ? ' no' : ''}} {{ module.bg_color == 'light blue' ? 'light-blue-color' : 'white-color' }}">
-              <!--      img          -->
-              {% if item.image.src %}
-                <div style="background-image: url('{{ item.image.src }}')" class="columns__column-image"></div>
+          <div class="col-md-4 col-mb-6 col-lg-4 col-12">
+            <div class="columns-col">
+              <div class="columns__column{{ module.box_shadow == 'no' ? ' no' : ''}} {{ module.bg_color == 'light blue' ? 'light-blue-color' : 'white-color' }}">
+                <!--      img          -->
+                {% if item.image.src %}
+                  <div style="background-image: url('{{ item.image.src }}')" class="columns__column-image"></div>
+                {% endif %}
                 
-              {% endif %}
-              
-              <!--       text         -->
-              <div class="columns__column-heading">
-                {{ item.heading }}
-              </div>
-              <div class="columns__column-description description">
-                {{ item.description }}
+                <!--       text         -->
+                <div class="columns__column-heading column-heading">
+                  {{ item.heading }}
+                </div>
+                <div class="columns__column-description description">
+                  {{ item.description }}
+                </div>
               </div>
             </div>
-        </div>
-         {% endfor %}
+          </div>
+        {% endfor %}
       </div>
     </div>
 </section>

@@ -3,19 +3,17 @@
     <div class="row">
       {% for item in module.column_field %}
         <div class="col-md-4 last-point">
-          {# <div class="highlight-points__col"> #}
-            <div class="highlight-points__column">
+       
+          <div class="highlight-points__column">
+            {# title #}
+            <div class="highlight-points__column-title">
+              <span>{{ item.title }}</span>
+            </div> 
 
-              {# title #}
-              <div class="highlight-points__column-title">
-                <span>{{ item.title }}</span>
-              </div> 
-
-              {# heading #}
-              <div class="highlight-points__column-heading">{{ item.heading }}</div>
-           
-            </div>
-          {# </div> #}
+            {# heading #}
+            <div class="highlight-points__column-heading column-heading">{{ item.heading }}</div>
+          </div>
+         
         </div>
       {% endfor %}
     </div>

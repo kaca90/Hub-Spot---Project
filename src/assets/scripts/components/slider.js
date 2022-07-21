@@ -19,8 +19,8 @@ if (Swiper) {
 
         function setupCategorySlider () {
             swiperInstances.category.instance = new Swiper(categorySlider[0], { // eslint-disable-line
-                slidesPerView: 5,
-                slidesPerGroup: 1,
+                slidesPerView: 1,
+                spaceBetween: 20,
                 freeMode: true,
                 freeModeMomentumRatio: sliderMomentumRatio,
                 loop: true,
@@ -29,13 +29,25 @@ if (Swiper) {
                 pagination: {
                     el: '.swiper-pagination',
                     clickable: true,
-                    // type: 'bullets',
                 },
                 navigation: {
                     nextEl: '.logos__slider__nav-next',
                     prevEl: '.logos__slider__nav-prev',
                 },
-
+                // Responsive breakpoints
+                breakpoints: {
+                    // when window width is >=
+                    1280: {
+                        slidesPerView: 5,
+                        spaceBetween: 20,
+                    },
+                    992: {
+                        slidesPerView: 3,
+                    },
+                    456: {
+                        slidesPerView: 2,
+                    }
+                },
             });
         }
 

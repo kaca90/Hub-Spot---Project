@@ -17,10 +17,11 @@ $grid-breakpoints: (
   md: 992px,
   lg: 1280px,
   xl: 1400px,
-) !default;
+  ) !default;
 
 @function strip-unit($num) {
-  @return $num / ($num * 0 + 1);
+  @return $num / ($num * 0 + 1
+);
 }
 
 @function breakpoint($key) {
@@ -29,7 +30,7 @@ $grid-breakpoints: (
 }
 
 @function breakpointContainerWidth($res, $margin, $gutter-width) {
-  @return ($res - ($margin * 2)) + $gutter-width;
+  @return ($res - ($margin * 2))+$gutter-width;
 }
 
 // Grid containers
@@ -40,9 +41,9 @@ $container-max-widths: (
   sm: 540px,
   mb: 720px,
   md: 960px,
-  lg: 1190px,
+  // lg: 1190px,
   xl: 1190px,
-) !default;
+  ) !default;
 
 // Grid columns
 //
@@ -52,9 +53,13 @@ $grid-columns: 12 !default;
 $grid-gutter-width: 30px !default;
 
 $grid-margin: 180 !default;
-$grid-column-padding: ($grid-gutter-width / 2);
+$grid-column-padding: (
+  $grid-gutter-width / 2
+);
 
-$contained-grid-padding: ($grid-margin - $grid-column-padding);
+$contained-grid-padding: (
+  $grid-margin - $grid-column-padding
+);
 
 // END of Grid Options
 

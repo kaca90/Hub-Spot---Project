@@ -4,6 +4,7 @@
 
     .btn {
         margin-left: 20px;
+     
 
         &:first-of-type {
             margin-left: 0;
@@ -20,15 +21,18 @@
     line-height: 20px;
     text-align: center;
     color: #FFFFFF;
+    transition: background-color 0.25s linear;
 
     &.btn-ghost {
         background: transparent;
         color: #313155;
         border: 2px solid #D0D5DF;
+        transition: background-color 0.25s linear;
     }
 
     &.btn-secondary {
         background: #3258A3;
+        transition: background-color 0.25s linear;
     }
 }
 
@@ -39,6 +43,7 @@
 .btn-ghost:hover {
     background: #3258A3;
     color: #FFFFFF;
+    border: 2px solid #3258A3;
 }
 
 .btn-secondary:hover {

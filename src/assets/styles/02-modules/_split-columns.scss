@@ -1,6 +1,5 @@
 .split-columns {
     width: 100%;
-    padding: 110px 0;
     min-height: 650px;
 
     .row {
@@ -8,7 +7,6 @@
             flex-direction: row-reverse;
         }
     }
-
 
 
     // img
@@ -63,6 +61,13 @@
                 &:last-child {
                     margin-bottom: 0;
                 }
+
+            }
+
+            &-ico {
+                display: flex;
+                align-items: start;
+                flex-direction: column;
             }
 
 
@@ -72,28 +77,65 @@
                     width: 37px;
                     height: 37px;
                     margin-right: 20px;
+                    background-repeat: no-repeat;
                 }
             }
 
-            &-subheading {
-                font-weight: 700;
-                font-size: 24px;
-                line-height: 34px;
-                letter-spacing: -0.218182px;
-                color: #313155;
+            &-heading {
+                margin-bottom: 4px;
                 display: inline-block;
 
             }
 
             &-description {
                 margin-bottom: 35px;
-                margin-top: 4px;
+
             }
 
         }
 
         &-buttons {
             margin-top: 20px;
+        }
+    }
+}
+
+// responsive
+
+// tablet
+@media (max-width: breakpoint(md)) {
+    .split-columns {
+
+        .split-columns__img-image {
+            height: 400px;
+            width: 100%;
+            position: relative;
+            background-size: cover;
+
+        }
+
+        .split-columns__text-head-subheading,
+        .split-columns__text-head-heading {
+            margin-top: 25px;
+        }
+
+        .split-columns__text-buttons {
+            margin-bottom: 50px;
+           
+        }
+
+        .btn{
+            width: 100%;
+        }
+    }
+}
+
+// mob sm: 576px
+@media (max-width: breakpoint(sm)) {
+    .split-columns {
+
+        .split-columns__text-buttons {
+            margin-bottom: 60px;
         }
     }
 }

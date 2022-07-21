@@ -2,7 +2,7 @@
      <div class="container">
           <div class="row {{ module.module_order == 'image-right' ? ' order-reverse' : '' }}">
                {# img #}
-               <div class="col-md-6">
+               <div class="col-md-6 col-mb-12">
                     <div class="split-columns__img">
                          {% if module.image_field.src %}
                               <div style="background-image: url('{{ module.image_field.src }}')" class="split-columns__img-image"></div>
@@ -21,7 +21,7 @@
                            {% endif %}
                            
                            {% if module.heading %}
-                              <div class="split-columns__text-head-heading heading">{{ module.heading }}</div>
+                              <div class="split-columns__text-head-heading column-heading">{{ module.heading }}</div>
                            {% endif %}
                            
                            {% if module.description %}
@@ -30,11 +30,11 @@
                          </div>
 
                         
-                         {# subheading #}
+                         {# subhead #}
                          <div class="split-columns__text-subhead">
                               {% for item in module.subheading_field %}
                                    <div class="split-columns__text-subhead-con">
-                                        
+                                        {# img #}
                                         {% if item.image_ex.src %}
                                              <div class="split-columns__text-subhead-img-ex">
                                                   <svg width="37" height="36" viewBox="0 0 37 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -44,9 +44,9 @@
                                              </div>
                                         {% endif %}    
                                         
-
+                                        {# text #}
                                         <div class="split-columns__text-subhead-ico">
-                                             <div class="split-columns__text-subhead-subheading">
+                                             <div class="split-columns__text-subhead-heading column-heading ">
                                                   {{ item.subheading }}
                                              </div>
                                              <div class="split-columns__text-subhead-description description">

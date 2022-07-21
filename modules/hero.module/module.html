@@ -1,36 +1,52 @@
 <section class="hero">
   <div class="container">
     <div class="row {{ module.image_order == 'image-right' ? 'image-right' : 'image-left' }}">
-       {# img #}
+      
+   
+      <!--   text     -->
+      {# small heading, heading, description #}
+      <div class="col-md-6 col-mb-12">
+        <div class="con">
+          {% if module.small_heading %}
+            <div class="hero__subheading subheading">{{ module.small_heading }}</div>
+          {% endif %}
+          
+          {% if module.heading %}
+            <div class="hero__heading heading">{{ module.heading }}</div>
+          {% endif %}
+          
+          {% if module.heading %}
+            <div class="hero__description description">{{ module.description }}</div>
+          {% endif %}
+          
+          <!--   btn     -->
+          <div class="hero__buttons buttons">
+          {% for item in module.button %}
+            <a href="{{ item.url_field.href }}" class="btn btn-{{ item.button_type }}">{{ item.button_text }}</a>
+          {% endfor %}
+          </div>
+
+
+          {# {% for item in module.button %}
+            <div class="hero__buttons buttons {{ item.button_text && item.url_field == 'btn btn-{{ item.button_type }}' ? 'btn-none' : ""}}">
+            <div class="hero__buttons buttons">   
+            <a href="{{ item.url_field.href }}" class="btn btn-{{ item.button_type }}">{{ item.button_text }}</a>
+            </div>
+          {% endfor %}   #}
+         
+        </div>
+
+
+        
+      </div>
+
+      {# img #}
       <div class="hero__image">
         {% if module.image_field.src %}
         <div style="background-image: url('{{ module.image_field.src }}')" class="hero__image-img"></div>
         {% endif %}
       </div>
-   
-      <!--   text     -->
-     {# small heading, heading, description #}
-    <div class="col-md-6">
-      {% if module.small_heading %}
-        <div class="hero__subheading subheading">{{ module.small_heading }}</div>
-      {% endif %}
-      
-      {% if module.heading %}
-        <div class="hero__heading heading">{{ module.heading }}</div>
-      {% endif %}
-      
-       {% if module.heading %}
-        <div class="hero__description description">{{ module.description }}</div>
-      {% endif %}
-      
-      <!--   btn     -->
-        <div class="hero__buttons buttons">
-        {% for item in module.button %}
-          <a href="{{ item.url_field.href }}" class="btn btn-{{ item.button_type }}">{{ item.button_text }}</a>
-        {% endfor %}
-        </div>
-      </div>
-    </div>
+
     
   </div>
 </section>

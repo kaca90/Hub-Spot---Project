@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row">
         {# text #}
-        <div class="col-md-6">  
+        <div class="col-xl-6 col-md-6">  
           <div class="split-columns-bg-image__text">
             {# heading #} 
             {# small heading, heading, description #}
@@ -17,31 +17,35 @@
             {% endif %}
             
             {% if module.description %}
-              <div class="split-columns-bg-image__text-heading-description description">{{ module.description }}</div>
+              <div class="split-columns-bg-image__text-description description">{{ module.description }}</div>
             {% endif %}
           
             
-            <!--        subheading    -->
+            <!--        subhead    -->
             <div class="split-columns-bg-image__text-subhead">
               {% for item in module.subheading_field %}
                 <div class="split-columns-bg-image__text-subhead-con">
+                   {# img #}
+                  {% if item.image_check.src %}
+                    <div class="split-columns-bg-image__text-subhead-img-check">
+                      <svg width="37" height="36" viewBox="0 0 37 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <ellipse cx="18.2744" cy="17.5976" rx="18.2744" ry="17.5976" fill="white"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7181 23.4634C15.4887 23.4634 15.2731 23.3756 15.1108 23.2162L9.9975 18.1938C9.66294 17.8652 9.66294 17.33 9.9975 17.0011C10.1598 16.8417 10.3754 16.7539 10.6048 16.7539C10.8339 16.7539 11.0495 16.8417 11.2118 17.0011L15.4213 21.1358C15.5032 21.2163 15.6107 21.2564 15.7181 21.2564C15.8253 21.2564 15.9327 21.2163 16.0146 21.1358L25.3375 11.9787C25.4995 11.8193 25.7154 11.7317 25.9445 11.7317C26.1739 11.7317 26.3895 11.8193 26.5518 11.9787C26.8863 12.3075 26.8863 12.8428 26.5518 13.1716L16.3251 23.2162C16.1628 23.3756 15.9472 23.4634 15.7181 23.4634Z" fill="#50957D"/>
+                      </svg>
+                    </div>
+                  {% endif %}
+                  
+                    {# text #}
                   <div class="split-columns-bg-image__text-subhead-ico">
-
-             
-                    {% if item.image_check.src %}
-                      <div style="background-image: url('{{ item.image_check.src }}')" class="split-columns-bg-image__text-subhead-img-check"></div>
-                    {% endif %}
-                  
-                    
-                  
-                    <div class="split-columns-bg-image__text-subhead-subheading">
+                    <div class="split-columns-bg-image__text-subhead-heading column-heading">
                     {{ item.subheading }}
+                    </div>
+
+                    <div class="split-columns-bg-image__text-subhead-description description">
+                      {{ item.description }}
                     </div>
                   </div>
 
-                  <div class="split-columns-bg-image__text-subhead-description description">
-                    {{ item.description }}
-                  </div>
                 </div>
               {% endfor %}
             </div>
