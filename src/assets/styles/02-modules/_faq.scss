@@ -11,7 +11,6 @@
             color: #5A5A77;
             margin-top: 9px;
             margin-bottom: 16px;
-            max-width: 513px;
             display: block;
         }
 
@@ -45,7 +44,6 @@
         &-heading,
         &-description {
             text-align: center;
-            max-width: 780px;
         }
 
         &-description {
@@ -57,7 +55,6 @@
 
     // row field
     &__row-field {
-        max-width: 576px;
 
         &-con {
             display: flex;
@@ -75,8 +72,6 @@
             display: inline-flex;
             margin-top: 16px;
             margin-bottom: 9px;
-            // 
-            max-width: 513px;
 
         }
 
@@ -87,7 +82,6 @@
             color: #5A5A77;
             margin-top: 9px;
             margin-bottom: 16px;
-            max-width: 513px;
             display: none;
         }
 
@@ -122,6 +116,20 @@
 
     &:first-child {
         border-top: 1px solid #D0D9E5;
-        max-width: 576px;
+    }
+}
+
+// responsive
+
+// tablet mb: 768px
+@media (max-width: breakpoint(md)) {
+    .faq {
+        .right {
+
+            &:first-child {
+                border-top: none;
+            }
+        }
+
     }
 }

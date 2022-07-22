@@ -44,19 +44,20 @@
       {# right #}
       <div class="col-md-6">
         {% for item in module.row_field %}
-          {% if loop.index %2 == 0 %}<div class="right">
-            <div class="faq__row-field">
+          {% if loop.index %2 == 0 %}
+            <div class="right">
+              <div class="faq__row-field">
 
-              <div class="faq__row-field-con">
-                <div class="faq__row-field-question">
-                  {{ item.heading}}
+                <div class="faq__row-field-con">
+                  <div class="faq__row-field-question">
+                    {{ item.heading}}
+                  </div>
+                  <div class="faq__row-field-image"></div>
                 </div>
-                <div class="faq__row-field-image"></div>
-              </div>
 
-              <div class="faq__row-field-answer">
-                {{ item.description}}
-              </div>
+                <div class="faq__row-field-answer">
+                  {{ item.description}}
+                </div>
                 
               </div>
             </div>

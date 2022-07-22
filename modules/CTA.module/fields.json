@@ -41,6 +41,12 @@
   "label" : "Button Field",
   "required" : false,
   "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : 2,
+    "sorting_label_field" : null,
+    "default" : null
+  },
   "children" : [ {
     "id" : "b07d381b-df87-e5a7-782d-912023186835",
     "name" : "button_text",
@@ -63,9 +69,9 @@
     "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
     "type" : "url",
     "default" : {
-      "content_id" : null,
-      "href" : "",
-      "type" : "EXTERNAL"
+      "type" : "EXTERNAL",
+      "href" : "https://www.google.com/",
+      "content_id" : null
     }
   }, {
     "id" : "4be8b261-c180-ce71-7b9f-3b666a1925fe",
@@ -85,9 +91,9 @@
   "default" : {
     "button_text" : "Request a Proposal",
     "url_field" : {
-      "content_id" : null,
-      "href" : "",
-      "type" : "EXTERNAL"
+      "type" : "EXTERNAL",
+      "href" : "https://www.google.com/",
+      "content_id" : null
     },
     "button_type" : "primary"
   }

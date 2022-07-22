@@ -98,9 +98,9 @@
     "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
     "type" : "url",
     "default" : {
-      "content_id" : null,
-      "href" : "",
-      "type" : "EXTERNAL"
+      "type" : "EXTERNAL",
+      "href" : "https://www.google.com/",
+      "content_id" : null
     }
   }, {
     "id" : "b4db5141-4bf2-9feb-49d7-505bc17ffaf3",
@@ -120,9 +120,9 @@
   "default" : {
     "button_text" : "Request a Proposal",
     "url_field" : {
-      "content_id" : null,
-      "href" : "",
-      "type" : "EXTERNAL"
+      "type" : "EXTERNAL",
+      "href" : "https://www.google.com/",
+      "content_id" : null
     },
     "button_type" : "primary"
   }
