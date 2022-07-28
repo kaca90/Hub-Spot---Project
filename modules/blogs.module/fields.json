@@ -1,0 +1,22 @@
+[ {
+  "id" : "46d459ad-9eee-e428-91d6-7381c96e4288",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : { }
+}, {
+  "id" : "a5398b4f-8105-b3db-afcf-b7bd1e3c5db4",
+  "name" : "hubdbtable_field",
+  "display_width" : null,
+  "label" : "HubDB table",
+  "required" : false,
+  "locked" : false,
+  "type" : "hubdbtable",
+  "default" : 4685302
+} ]

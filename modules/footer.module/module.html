@@ -1,0 +1,49 @@
+<header class="footer">
+  <div class="footer__main">
+    <div class="container">
+      <div class="row">
+       
+        <!--   contact        -->
+        <div class="col-md-3 contact-col">
+          <div class="footer__title">
+            {{ module.title_contact }}
+          </div>
+          <div class="footer__link">
+            {% for item in module.column_field_contact %}
+              <div class="footer__link-con">
+                <img src="{{ item.image_field_contact.src}}"/>
+                <div class="footer__text-contact">{{ item.text_contact }}</div>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+
+
+        <!--  footer menu  -->
+        <div class="footer__menu col-md-9">
+          {% menu id="{{ module.menu_field }}" %}  
+        </div>
+
+
+          <!--   social        -->
+        <div class="col-md-3 social-col">
+          <div class="footer__title">
+            {{ module.title_social }}
+          </div>
+          <a class="footer__link">
+            {% for item in module.column_field_social %}
+              <div class="footer__link-con">
+                <img src="{{ item.image_field_social.src}}"/>
+                <div class="footer__text-social">{{ item.text_social }}</div>
+              </div>
+            {% endfor %}
+          </a>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+</header>
+

@@ -1,0 +1,144 @@
+[ {
+  "id" : "9314e112-88b4-6156-6188-250d026ca4f7",
+  "name" : "title_contact",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Contact"
+}, {
+  "id" : "dffb3d2d-23f0-8019-630b-67595eb0c1f2",
+  "name" : "column_field_contact",
+  "display_width" : null,
+  "label" : "Column Field Contact",
+  "required" : false,
+  "locked" : true,
+  "occurrence" : {
+    "min" : null,
+    "max" : 5,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "daaa1b48-0e17-9a3e-b47c-f3f2f7b0a57e",
+    "name" : "image_field_contact",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  }, {
+    "id" : "eb2b7ce0-aea6-99a5-8f8c-54452cbf3396",
+    "name" : "text_contact",
+    "display_width" : null,
+    "label" : "Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "250 State Street Mobile, AL 36603"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "image_field_contact" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    },
+    "text_contact" : "250 State Street Mobile, AL 36603"
+  }
+}, {
+  "id" : "ddc4e3eb-a5a9-685f-a042-d378557659a6",
+  "name" : "menu_field",
+  "display_width" : null,
+  "label" : "Menu",
+  "required" : false,
+  "locked" : true,
+  "type" : "menu",
+  "default" : 51158001622
+}, {
+  "id" : "5ea6857c-3667-7781-8648-116f2d62a0ad",
+  "name" : "title_social",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Social"
+}, {
+  "id" : "13f08af8-76c9-48ef-0faa-8215b05d8562",
+  "name" : "column_field_social",
+  "display_width" : null,
+  "label" : "Column Field Social",
+  "required" : false,
+  "locked" : true,
+  "occurrence" : {
+    "min" : null,
+    "max" : 5,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "b0e2c0f4-8d24-572b-f4b1-8395d1d12717",
+    "name" : "image_field_social",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  }, {
+    "id" : "942c300d-34de-ef92-0f90-19c1a04f8e45",
+    "name" : "text_social",
+    "display_width" : null,
+    "label" : "Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Facebook"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "image_field_social" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    },
+    "text_social" : "Facebook"
+  }
+} ]

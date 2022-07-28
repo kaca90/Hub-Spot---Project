@@ -1,0 +1,142 @@
+.footer {
+    background-color: #F6F6F8;
+    color: #5A5A77;
+
+    &__title {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 1.3125px;
+        color: #5A5A77;
+        text-transform: uppercase;
+        border-bottom: 2px solid rgba(206, 206, 214, .5);
+        padding-bottom: 16px;
+
+        img {
+            width: 15px;
+            height: 15px;
+            display: inline-block;
+        }
+    }
+
+    &__link {
+        display: flex;
+        flex-direction: column;
+        margin-top: 17px;
+    }
+
+    &__link-con {
+        align-items: center;
+        display: flex;
+    }
+
+    // contact , social
+    &__text-contact,
+    &__text-social {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #5A5A77;
+        display: inline-flex;
+        padding: 7px 18px;
+        align-items: center;
+
+        &:hover {
+            color: #941817;
+        }
+    }
+
+
+
+    // contact 
+    &__text-contact {
+        text-transform: uppercase;
+    }
+
+    // social
+    &__text-social {
+        text-transform: capitalize;
+    }
+
+
+    // __menu
+    &__menu {
+
+        ul {
+            display: flex;
+            list-style: none;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        .hs-item-has-children {
+            display: flex;
+            flex-direction: column;
+            padding-right: 15px;
+            padding-left: 15px;
+            width: 100%;
+
+            a {
+                font-family: 'Work Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 22px;
+                letter-spacing: 1.3125px;
+                text-transform: uppercase;
+                color: #5A5A77;
+                margin-bottom: 10px;
+
+                &:hover {
+                    color: #941817;
+                }
+            }
+
+            a:first-child {
+                border-bottom: 2px solid rgba(206, 206, 214, .5);
+                padding-bottom: 16px;
+            }
+
+            .hs-menu-children-wrapper {
+                a {
+                    border-bottom: none;
+                }
+            }
+
+
+
+            .hs-menu-depth-2 {
+                a {
+                    font-family: 'Work Sans';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 20px;
+                    text-transform: none;
+                    color: #5A5A77;
+
+                    &:hover {
+                        color: #941817;
+                    }
+                }
+
+                margin-bottom: 13px;
+
+            }
+        }
+
+        .hs-menu-children-wrapper {
+            display: flex;
+            flex-direction: column;
+            padding-top: 17px;
+
+
+        }
+
+    }
+
+}

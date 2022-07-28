@@ -13,6 +13,8 @@
 @import "/02-modules/logos_slider";
 @import "/02-modules/highlight_points";
 @import "/02-modules/faq";
+@import "/02-modules/blogs";
+
 
 // -- COMMON
 @import "./04-common/animations";
@@ -30,6 +32,8 @@
 @import "./03-layout/main";
 @import "./03-layout/header";
 @import "./03-layout/footer";
+@import "/02-modules/header";
+@import "/02-modules/footer";
 
 // -- VENDOR
 @import "./05-vendor/slick";
