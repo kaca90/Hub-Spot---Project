@@ -10,12 +10,17 @@
           </div>
          
            <!--      center     -->
-          <div class="header__center">
+          <div class="header__center nav">
             {% menu id="{{ module.menu_field }}" %}
-          </div>
-         
-         
-         
+
+              <!--    center btn       -->
+            <div class="header__center-buttons buttons">
+              <a href="#" class="btn">Request a Proposal</a>
+            </div>
+          </div> 
+          
+       
+
             <!--      right     -->
           <div class="header__right">
             <!--       search icon       -->
@@ -26,12 +31,21 @@
             </div>
 
             
-            <!--       btn       -->
-            {% if module.field_group  %}
+          {% if module.field_group  %}
             <div class="header__buttons buttons">
               <a href="{{ module.field_group.url_field.href }}" class="btn btn-{{ module.field_group.button_type }}">{{ module.field_group.button_text }}</a>
             </div>
-            {% endif %}
+          {% endif %}
+         
+           
+
+            {# burger #}
+            <div class="header__burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            <div>
+          
           </div>
          
         </div>

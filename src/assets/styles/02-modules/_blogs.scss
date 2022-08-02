@@ -41,7 +41,7 @@
 
             &:hover {
                 svg {
-                    margin-left: 7px;
+                    transform: translateX(5px);
                     transition: transform .25s cubic-bezier(.3, 0, .22, 1);
                 }
 
@@ -49,8 +49,7 @@
         }
 
         svg {
-            margin-left: 14px;
-
+            margin-left: 7px;
         }
 
 
