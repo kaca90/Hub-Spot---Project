@@ -1,7 +1,7 @@
 {
   "global" : false,
-  "icon" : "fontawesome-5.14.0:Alternate%20Feather:SOLID",
+  "icon" : "fontawesome-5.14.0:Child:SOLID",
   "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
-  "module_id" : 51404272866,
+  "module_id" : 51412804549,
   "is_available_for_new_content" : true
 }

@@ -1,0 +1,71 @@
+.request-a-proposal {
+ 
+    .main-form-holder {
+        display: block;
+        margin: 0 auto;
+        max-width: 700px;
+    }
+
+    .main-form {
+        margin-top: -60px;
+        margin-bottom: 50px;
+        background: #fff;
+        box-shadow: 0 10px 30px rgba(66, 66, 66, 0.14);
+        padding: 80px 60px 40px;
+        border-radius: 70px 0 70px 0;
+
+        fieldset {
+            max-width: 100% !important;
+            width: 100%;
+        }
+    }
+
+    label {
+        font-size: 18px;
+        line-height: 28px;
+        color: #5a5a77;
+    }
+
+    input,
+    select {
+        padding: 12px 15px;
+        font-size: 18px;
+        line-height: 28px;
+        color: #5a5a77;
+        width: 100% !important;
+        background: #fff;
+        border: 1px solid #e3e3e3;
+        box-sizing: border-box;
+        border-radius: 5px;
+        outline: none;
+        appearance: none;
+        -webkit-appearance: none;
+    }
+
+    .hs-form-field {
+        margin-bottom: 20px;
+    }
+
+    // hs-button
+    input[type=submit] {
+        appearance: none;
+        -webkit-appearance: none;
+        cursor: pointer;
+        border: none;
+        border-radius: 30px;
+        padding: 18px 24px;
+        color: #fff;
+        background: #b01313;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 700;
+        transition: background .25s cubic-bezier(.3, 0, .22, 1), color .25s cubic-bezier(.3, 0, .22, 1);
+        max-width: 35%;
+    }
+
+    .hs-submit .actions {
+        padding-top: 20px;
+        text-align: center;
+    }
+}
+

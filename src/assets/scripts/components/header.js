@@ -13,14 +13,3 @@ callToActionBtns.forEach((btn) => {
         currentBtn.classList.toggle('open');
     });
 });
-
-// const openDropdownBtns = document.querySelectorAll('.hs-item-has-children');
-
-// openDropdownBtns.forEach((btn) => {
-//     btn.addEventListener('click', (e) => {
-//         const currentBtn =
-//         e.target.children[1];
-//         currentBtn.classList.toggle('active');
-//     });
-// });
-

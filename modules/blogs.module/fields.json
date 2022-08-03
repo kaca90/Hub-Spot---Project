@@ -1,22 +1,18 @@
 [ {
-  "id" : "46d459ad-9eee-e428-91d6-7381c96e4288",
-  "name" : "style",
+  "id" : "52c2aa96-da7a-3c54-b6ab-b63cd451c85c",
+  "name" : "main_image",
   "display_width" : null,
-  "label" : "Style",
+  "label" : "Main Image",
   "required" : false,
   "locked" : false,
-  "children" : [ ],
-  "tab" : "STYLE",
-  "expanded" : false,
-  "type" : "group",
-  "default" : { }
-}, {
-  "id" : "a5398b4f-8105-b3db-afcf-b7bd1e3c5db4",
-  "name" : "hubdbtable_field",
-  "display_width" : null,
-  "label" : "HubDB table",
-  "required" : false,
-  "locked" : false,
-  "type" : "hubdbtable",
-  "default" : 4685302
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "",
+    "alt" : null,
+    "loading" : "lazy"
+  }
 } ]

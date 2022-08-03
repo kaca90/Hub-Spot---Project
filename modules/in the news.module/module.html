@@ -1,0 +1,36 @@
+<section class="in_the_news">
+  <div class="container">
+      <div class="row">
+        {% for row in hubdb_table_rows(module.hubdbtable_field) %}
+          <div class="col-md-4 col-mb-6 col-lg-4 col-12">
+           
+            <div class="in_the_news__column">
+              <!--      img          -->
+              {% if row.image.url %}
+                <img src="{{ row.image.url }}" class="in_the_news__column-image"/>
+              {% endif %}
+              
+              <!--       text         -->
+              <div class="in_the_news__column-heading column-heading">
+                {{ row.name }}
+              </div>
+              <a href="{{row.link_url}}" class="in_the_news__column-link">
+                Read Article
+                
+                {# link arrow #}
+                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <mask id="mask0_13_10066" style="mask-type: alpha" maskUnits="userSpaceOnUse" x="0" y="2" width="11" height="7">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.69121 4.52002H0.293987C0.131633 4.52002 0 4.65165 0 4.81401V6.18594C0 6.3483 0.131633 6.47993 0.293987 6.47993H7.69121V7.60832C7.69121 8.13216 8.32453 8.39449 8.69495 8.0241L10.8033 5.91575C11.0329 5.68612 11.0329 5.31383 10.8033 5.08423L8.69495 2.97588C8.32455 2.60548 7.69121 2.86781 7.69121 3.39165V4.52002Z" fill="white"></path>
+                  </mask>
+                  <g mask="url(#mask0_13_10066)">
+                    <rect width="11" height="11" fill="#3258A3"></rect>
+                  </g>
+                </svg>
+              </a>
+            </div>
+           
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+</section>
