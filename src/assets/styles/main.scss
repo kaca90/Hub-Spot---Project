@@ -14,8 +14,8 @@
 @import "/02-modules/highlight_points";
 @import "/02-modules/faq";
 @import "/02-modules/in_the_news";
-@import "/02-modules/blogs";
 @import "/02-modules/request-a-proposal";
+@import "./02-modules/blog_hero";
 
 
 // -- COMMON
@@ -34,8 +34,11 @@
 @import "./03-layout/main";
 @import "./03-layout/header";
 @import "./03-layout/footer";
+@import "./03-layout/blog_content";
+@import "./03-layout/blog_listing";
 @import "/02-modules/header";
 @import "/02-modules/footer";
 
 // -- VENDOR
 @import "./05-vendor/slick";
+

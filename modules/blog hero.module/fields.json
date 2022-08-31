@@ -1,0 +1,30 @@
+[ {
+  "id" : "18bab9e4-c6aa-ba7a-1a34-65b81a7bd9fe",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "401(k) Retirement Planning – 4 Steps to Retire Faster"
+}, {
+  "id" : "2b0af93a-f3dd-8dc0-d343-35ec126cb444",
+  "name" : "image_field",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "",
+    "alt" : null,
+    "loading" : "lazy"
+  }
+} ]

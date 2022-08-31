@@ -1,0 +1,59 @@
+<!--
+  templateType: blog_post
+  isAvailableForNewContent: true
+  label: Blogs Content (KB)
+  screenshotPath: ../images/template-previews/blog.png
+-->
+
+{% extends "./layouts/base.html" %} 
+{% block body %}
+
+    <main id="main-content" class="body-container-wrapper">
+        {# imported blog hero #}
+        {% module 'blog hero' path='../modules/blog hero' %}
+        <section class="blog">
+            <div class="container">
+                <div class="row">
+                    {# left - media icons#}
+                    <div class="col-mb-2 col-12"><div class="share">
+                        <div class="share__title">Share:</div>
+                            <a class="share__icon share__facebook" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/sharer/sharer.php?u={{ request.full_url }}">
+                            <img src="https://www.employeefiduciary.com/hubfs/assets/images/icons/facebook.png" alt="Facebook">
+                            </a>
+                            <a class="share__icon share__twitter" target="_blank" rel="noopener noreferrer" href="https://twitter.com/intent/tweet?text={{ page_meta.name }}%0A{{ request.full_url }}">
+                            <img src="https://www.employeefiduciary.com/hubfs/assets/images/icons/twitter.png" alt="Twitter">
+                            </a>
+                            <a class="share__icon share__linkedin" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/shareArticle?mini=true&url={{ request.full_url }}&title={{ page_meta.name }}&summary=&source=">
+                            <img src="https://www.employeefiduciary.com/hubfs/assets/images/icons/linkedin.png" alt="Linkedin">
+                            </a>
+                            <a class="share__icon share__mail" target="_blank" rel="noopener noreferrer" href="mailto:?subject= I want to share this with you &amp;body= Hi there, Check out this blog {{ request.full_url }}. Thanks.">
+                            <img src="https://www.employeefiduciary.com/hubfs/assets/images/icons/mail.png" alt="Mail">
+                            </a>
+                        </div>
+                    </div>
+
+                    {# center - blog content#}
+                    <div class="col-lg-8 col-mb-10 col-12">
+
+                        {# blog nav #}
+                        <div class="blog-nav">
+                        {% if content.tag_list %}
+                            {% for tag in content.tag_list %}
+                                <a class="underline" href="#">{{ tag.name }}</a>
+                                <span> | </span>  
+                            {% endfor %}
+                        {% endif %}
+                        </div>
+
+                        {# blog content #}
+                        <div class="blog-content">{{ content.post_body }}</div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </main>
+    
+{% endblock body %}
+    

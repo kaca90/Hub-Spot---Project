@@ -1,0 +1,45 @@
+<section class="blog-hero">
+  <div class="container">
+    <div class="row">
+      <!--   hero    -->
+      {# hero heading #}
+      <div class="col-lg-8 col-mb-10 col-12">
+        <div class="con">
+          {% if module.heading %}
+            <div class="blog-hero__heading heading">{{ module.heading }}</div>
+          {% else %}
+            <div class="blog-hero__heading heading">{{ content.title }}</div>
+          {% endif %}
+        </div>
+
+        {# hero author #}
+        <div class="blog-hero__author">	
+          <img src="{{ content.blog_post_author.avatar }}"/>
+          <div>
+            <p>By: {{ content.blog_post_author.display_name }}</p>
+            <p>
+              on 
+              {{ content.publish_date_local_time.strftime('%B') }}
+              {{ content.publish_date_local_time.strftime('%d') }},
+              {{ content.publish_date_local_time.strftime('%Y') }}
+            </p>
+          </div>
+          <div class="blog-hero__buttons buttons">
+            <a href="#" class=" btn primary-btn">Subscribe</a>
+          </div>
+				</div>
+      </div>
+
+      {# hero img #}
+      <div class="blog-hero__image">
+        {% if module.image_field.src %}
+        <div style="background-image: url('{{ module.image_field.src }}')" class="hero__image-img"></div>
+        {% else %}
+          <div style="background-image: url('{{ content.featured_image }}')" class="hero__image-img"></div>
+      {% endif %}
+
+      </div>
+    </div>
+  </div>
+</section>
+

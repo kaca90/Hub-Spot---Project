@@ -1,0 +1,124 @@
+<!--
+  templateType: blog_listing
+  isAvailableForNewContent: true
+  label:  Blogs listing
+-->
+
+{% extends "./layouts/base.html" %} {% block body %}
+
+    <main id="main-content" class="body-container-wrapper">
+        <section class="blogs">
+            <div class="container">
+                <div class="row">
+
+                    <div class="blogs__holder">
+                    {% for row in contents %}
+                        <div class="blogs__item">
+                            {# img #}
+                            <a data-test="true" href="#" data-image="https://www.employeefiduciary.com/hubfs/mep_abuse.png" data-check="true">
+                              <div style="background-image: url('{{ row.featured_image }}')" class="blogs__item__image"></div>
+                            </a>
+                                        
+                            {# tags #}
+                            <ul class="blogs__item__tags">
+                                {% if row.tag_list %}
+                                    {% for tag in row.tag_list %}
+                                        <li><a href="#">{{ tag.name }}</a></li>
+                                    {% endfor %}
+                                {% endif %}    
+                            </ul>
+
+                            {# title #}
+                            <a href="#">
+                                <h3>{{ row.title }}</h3>
+                            </a>
+
+                            {# author info #}
+                            <div class="blogs__item__author">
+                            
+                                <img src="{{ row.blog_post_author.avatar }}">
+                            
+                                <div class="blogs__item__author-info">
+                                    <p>By: <a href="#">{{ row.blog_post_author.display_name }}</a></p>
+                                    
+                                    <p> 
+                                        on 
+                                        {{ row.publish_date_local_time.strftime('%B') }}
+                                        {{ row.publish_date_local_time.strftime('%d') }},
+                                        {{ row.publish_date_local_time.strftime('%Y') }}
+                                    </p>
+                                </div>
+                            </div>
+
+                            {# desc #}
+                            <div class="blogs__item__description description">
+                            {{ row.meta_description}}
+                            </div>
+
+                            {# Read More #}
+                            <a href="#" class="classic-link">
+                                Read More
+                                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="mask0_13_10066" style="mask-type: alpha" maskUnits="userSpaceOnUse" x="0" y="2" width="11" height="7">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.69121 4.52002H0.293987C0.131633 4.52002 0 4.65165 0 4.81401V6.18594C0 6.3483 0.131633 6.47993 0.293987 6.47993H7.69121V7.60832C7.69121 8.13216 8.32453 8.39449 8.69495 8.0241L10.8033 5.91575C11.0329 5.68612 11.0329 5.31383 10.8033 5.08423L8.69495 2.97588C8.32455 2.60548 7.69121 2.86781 7.69121 3.39165V4.52002Z" fill="white"></path>
+                                </mask>
+                                <g mask="url(#mask0_13_10066)">
+                                    <rect width="11" height="11" fill="#3258A3"></rect>
+                                </g>
+                                </svg>
+                            </a>
+                        {# end blogs item #}
+                        </div> 
+                    {% endfor %}
+                    {#end blogs holder  #}
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        {# pagination #}
+        <div class="blog-pagination">
+            {% set page_list = [-2, -1, 0, 1, 2] %}
+            {% if contents.total_page_count - current_page_num == 1 %}{% set offset = -1 %}
+            {% elif contents.total_page_count - current_page_num == 0 %}{% set offset = -2 %}
+            {% elif current_page_num == 2 %}{% set offset = 1 %}
+            {% elif current_page_num == 1 %}{% set offset = 2 %}
+            {% else %}{% set offset = 0 %}{% endif %}
+    
+            <div class="blog-pagination__container blog-pagination__left">
+            {% if last_page_num %}<a class="prev-link" href="{{ blog_page_link(last_page_num) }}">❮</a>{% endif %}
+            {% if contents.total_page_count > 5 %}
+                {% if current_page_num >= 4 %}
+                    <a href="{{ blog_page_link(1) }}">1</a>
+                    <a class="elipses" href="{% if current_page_num <= 5 %}{{ blog_page_link(1) }}{% else %}{{ blog_page_link(current_page_num - 5) }}{% endif %}">...</a>
+                {% endif %}
+            {% endif %}
+            </div>
+
+            <div class="blog-pagination__container blog-pagination__center">
+            {% for page in page_list %}
+                {% set this_page = current_page_num + page + offset %}
+                {% if this_page > 0 and this_page <= contents.total_page_count %}
+                    <a {% if this_page == current_page_num %}class="active"{% endif %} href="{{ blog_page_link(this_page) }}">{{ this_page }}</a>
+                {% endif %}
+            {% endfor %}
+            </div>
+
+            <div class="blog-pagination__container blog-pagination__right">
+            {% if contents.total_page_count > 5 %}
+                {% if contents.total_page_count - current_page_num > 2 %}
+                    <a class="elipses" href="{% if contents.total_page_count - current_page_num <= 5 %}{{ contents.total_page_count }}{% else %}{{ blog_page_link(current_page_num + 5) }}{% endif %}">...</a>
+                    <a href="{{ blog_page_link(contents.total_page_count) }}">{{ contents.total_page_count }}</a>
+                {% endif %}
+            {% endif %}
+            {% if next_page_num %}<a class="next-link" href="{{ blog_page_link(current_page_num + 1) }}">❯</a>{% endif %}
+            </div>
+        </div>
+
+
+    </main>
+    
+{% endblock body %}
+    
